@@ -8,9 +8,9 @@ const accountData = {
 
 function credential() {
 
-  alert("Please make a note of Username and Password");
-  alert("Username - harish");
-  alert("Password - password");
+  // alert("Please make a note of Username and Password");
+  // alert("Username - harish");
+  // alert("Password - password");
 }
 credential();
 
