@@ -8,9 +8,9 @@ const accountData = {
 
 function credential() {
 
-  // alert("Please make a note of Username and Password");
-  // alert("Username - harish");
-  // alert("Password - password");
+  alert("Please make a note of Username and Password");
+  alert("Username - 123456");
+  alert("Password - password");
 }
 credential();
 
@@ -18,20 +18,20 @@ function login() {
   const acoountNumber = document.getElementById("username").value;
   const password = document.getElementById("password").value;
 
-  //   if (
-  //     acoountNumber === accountData.accountNumber &&
-  //     password === accountData.password
-  //   ) {
+    if (
+      acoountNumber === accountData.accountNumber &&
+      password === accountData.password
+    ) {
   document.getElementById("login-screen").classList.add("hidden");
   document.getElementById("menu-screen").classList.remove("hidden");
   document.getElementById(
     "greeting"
   ).innerText = `Welcome, ${accountData.name}`;
   ("Invalid amount or insufficient funds");
-  //   } else {
-  //     document.getElementById("login-error").innerHTML =
-  //       "Invalid account number or password";
-  //   }
+    } else {
+      document.getElementById("login-error").innerHTML =
+        "Invalid account number or password";
+    }
 }
 
 function hideScreens() {
